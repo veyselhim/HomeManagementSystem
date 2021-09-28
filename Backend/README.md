@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/header.gif)
+![Alt Text](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/banner.gif)
 
 ---
  ##   In this project used Angular on frontend part. You can access the relevant github repo from the link below.
