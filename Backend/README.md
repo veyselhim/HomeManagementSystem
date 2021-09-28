@@ -1,9 +1,9 @@
-![Alt Text](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/header.gif)
+![Alt Text](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/header.gif)
 
 ---
  ##   In this project used Angular on frontend part. You can access the relevant github repo from the link below.
 
-## To go to frontend :  ![github](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/github.png)https://github.com/veyselhim/ApsisDemo-FrontEnd
+## To go to frontend :  ![github](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/github.png)https://github.com/veyselhim/ApsisDemo-FrontEnd
 
 
 ## Getting Started
@@ -32,11 +32,11 @@
 
 # 	Database Diagram
    
-![diagram](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/DatabaseDiagram.png)
+![diagram](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/DatabaseDiagram.png)
 ---
 # Project Layers
 
-- **Business**![folder](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/folder.png)
+- **Business**![folder](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/folder.png)
    - Abstract
    - BusinessAspects
    - Concrete
@@ -45,7 +45,7 @@
    - Mapper
    - ServiceRepository
    - ValidationRules
-- **Core** ![folder](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/folder.png)
+- **Core** ![folder](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/folder.png)
   - Aspects
   - CrossCuttingConcerns
   - DependencyResolvers
@@ -53,20 +53,20 @@
    - Extensions
    - MongoDbRepositories
    - Utilities
-- **DataAccess**![folder](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/folder.png)
+- **DataAccess**![folder](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/folder.png)
   - Abstract
   - Concrete
-- **Entity** ![folder](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/folder.png)
+- **Entity** ![folder](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/folder.png)
    - Abstract
    - Concrete
    - DTOs
    - ApsisDemoWeb
-- **ApsisDemo.Core_Test** ![folder](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/folder.png)
+- **ApsisDemo.Core_Test** ![folder](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/folder.png)
   - EfRepositoryTest
 
 ---
 
-### Used Technologies ![tech](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/tech.png)
+### Used Technologies ![tech](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/tech.png)
 
 - **C#**
 - **Microsoft Sql Server**
@@ -74,7 +74,7 @@
 
 ---
 
-### Used Tools And Frameworks ![tools](https://github.com/veyselhim/ApsisDemoBackend/blob/master/ApsisDemoScreenShots/tools.png)
+### Used Tools And Frameworks ![tools](https://github.com/veyselhim/HomeManagementSystem/blob/master/Backend/ApsisDemoScreenShots/tools.png)
 
 - **Visual Studio 2019**
 
