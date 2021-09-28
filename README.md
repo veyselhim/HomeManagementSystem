@@ -5,7 +5,7 @@
 
 #### <span style="color:purple">Step 1</span>
 
-`git clone http://github.com/veyselhim/ApsisDemoBackend.git`
+`https://github.com/veyselhim/HomeManagementSystem.git`
 
 #### <span style="color:purple">**Step 2**</span>
 
