@@ -1,0 +1,25 @@
+<div class="p-5 mb-4 bg-light rounded-3 " >
+    <div class="container-fluid py-5">
+      <h2 class="display-5 fw-bold">Aidat Bilgileri</h2>
+      <table  class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tutar</th>
+            <th scope="col">Aidat Tarihi</th>
+            <th scope="col">Ödenme durumu</th>
+            <th scope="col">İşlemler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dues of dueses">
+            <th scope="row">{{dues.id}}</th>     
+            <td >{{dues.amount |currency: "TRY":"₺":""}}</td>
+            <td >{{dues.invoiceDate |date}}</td>
+            <td >{{dues.status |statusToYesNo}}</td>
+            <td><button class="ui inverted purple button" routerLink="payment/add/{{dues.id}}">Ödeme yap</button></td>
+          </tr>
+        </tbody>
+      </table>          
+    </div>
+  </div>  

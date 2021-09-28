@@ -1,0 +1,49 @@
+
+ 
+    <div class="row">
+      <div class="col md-12">
+        
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Konut Bilgileri</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Konut Tipi</th>
+                        <th>Blok</th>
+                        <th>Kapı numarası</th>
+                        <th>Kat</th>
+                        <th>İşlemler</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let apartment of apartments">
+                        <th scope="row">{{apartment.id}}</th>
+                        <td>{{apartment.type}}</td>
+                        <td>{{apartment.block}}</td>
+                        <td>{{apartment.doorNumber}}</td>
+                        <td>{{apartment.floor}}</td>
+                        <td> 
+                          <a class="name p-2 "routerLink="update/{{apartment.id}}">Güncelle</a> ||
+                          <a class="name " routerLink="detail/{{apartment.id}}">Detay</a>  ||
+                          <a class="name" routerLink="/admin/apartments" (click)="delete(apartment.id)" >Sil</a>  
+      
+                    </td>                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  </div>
+  

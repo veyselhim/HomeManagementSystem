@@ -1,0 +1,75 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <h3>Kullanıcı Güncelle</h3>
+                            
+                                <form [formGroup]="userUpdateForm">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" id="name" formControlName="firstName" class="form-control" placeholder="Adı"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="text" id="surName" formControlName="lastName" class="form-control" placeholder="Soyadı"/> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="text" id="identityNumber" formControlName="identityNumber" class="form-control" placeholder="TC Kimlik"/> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="email" id="mail" formControlName="email" class="form-control" placeholder="E-Mail"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="text" id="phone" formControlName="phone" class="form-control" placeholder="Telefon"/>
+                                            </div>
+                                        </div>   
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="text" id="password" formControlName="password" class="form-control" placeholder="Şifre"/> 
+                                            </div>
+                                        </div>   
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="text" id="vehiclePlateNumber" formControlName="vehiclePlateNumber" class="form-control" placeholder="Araç Plakası"/> 
+                                            </div>
+                                        </div>   
+                                       
+
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="submit" value="Kaydet" class="btn btn-primary" (click)="update()">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="w-100 social-media mt-5">
+                                    <h3>Kullanıcı işlemleri Yönlendirme</h3>
+                                    <p>
+                                        <a routerLink="/admin/residents/update">Güncelle</a>
+                                        <a href="#">Sil</a>
+                                        <a href="#">Kullanıcılar</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="info-wrap w-100 p-5 img" style="background-image: url(assets/images/loginHome.jpg)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+<div class="container " style="height: 40rem;">
+    <div style="text-align:center">
+      <h2>Admine Mesaj Gönder</h2>
+      <p>Gönderen kişi :  {{currentUserName}}</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="/assets/images/map.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form [formGroup]="messageAddForm"> 
+
+         
+          <div class="form-group">
+            <label for="lname">Konu</label>
+            <input formControlName="subject" type="text" id="subject" name="subject" placeholder="Konuyu giriniz...">
+          </div>
+
+          <div class="form-group"> 
+            <label for="lname">İçerik</label>
+            <input formControlName="content" type="text" id="content" name="content" placeholder="İçerik giriniz...">
+          </div>
+
+          <input (click)="add()"  type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,51 @@
+
+  <div *ngFor="let user of users" class="four wide column"><div class="ui link cards cardPadding ">
+    <div class="card " >
+      <div class="image">
+        <img src="assets/images/card.jpg">
+      </div>
+      <div class="content">
+        <div class="header">{{user.id}}</div>
+        <div class="meta">
+          <a></a>
+        </div>
+        <div class="description">
+
+         <strong>Adı : {{user.firstName}} </strong> 
+         <br><br>
+
+         <strong>Soyadı : {{user.lastName}}</strong>
+          <br><br>
+
+          <strong>Telefon : {{user.phone}} </strong>
+          <br><br> 
+          <strong>TC Kimlik : {{user.identityNumber}}</strong>
+          <br><br> 
+          <strong>Araç Plakası : {{user.vehiclePlateNumber}}</strong>
+         
+        </div>
+      </div>
+      <div class="extra content">
+        <tr>
+          <td > <span >
+            <input type="submit" value="Sil" class="ui inverted red button" (click)="delete(user.id)"/>
+  
+          </span></td>
+          <td>  <span>
+            <button class="ui inverted yellow button" routerLink="update/{{user.id}}">Güncelle</button>
+
+          </span></td>
+          <td>  <span>
+            <button class="ui inverted purple button " routerLink="detail/{{user.id}}">Detay</button>
+
+  
+          </span></td>
+        </tr>
+       
+      
+      
+      </div>
+    </div>
+  
+  </div></div>
+   

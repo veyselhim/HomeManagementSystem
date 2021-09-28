@@ -1,0 +1,102 @@
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="wrapper">
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                <h3>Konut Ekle</h3>
+
+                <form [formGroup]="apartmentAddForm">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="type"
+                          formControlName="type"
+                          class="form-control"
+                          placeholder="Ev Tipi"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 pt-1">
+                      <div class="form-group">
+                        <ng-select
+                          [items]="users"
+                          bindLabel="firstName"
+                          bindValue="id"
+                          formControlName="userId"
+                          placeholder="Kişi seçiniz"
+                        >
+                        </ng-select>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="floor"
+                          formControlName="floor"
+                          class="form-control"
+                          placeholder="Kat"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 pt-1">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="doorNumber"
+                          formControlName="doorNumber"
+                          class="form-control"
+                          placeholder="Kapı no"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 pt-1">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="block"
+                          formControlName="block"
+                          class="form-control"
+                          placeholder="Blok"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 pt-1">
+                      <div class="form-group">
+                        <input
+                          type="submit"
+                          value="Kaydet"
+                          class="btn btn-primary"
+                          (click)="add()"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="w-100 social-media mt-5">
+                  <h3>Apartman işlemleri Yönlendirme</h3>
+                  <p>
+                    <a routerLink="/admin/apartments/update">Güncelle</a>
+                    <a href="#">Sil</a>
+                    <a href="#">Apartmanlar</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div
+                class="info-wrap w-100 p-5 img"
+                style="background-image: url(assets/images/loginHome.jpg)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

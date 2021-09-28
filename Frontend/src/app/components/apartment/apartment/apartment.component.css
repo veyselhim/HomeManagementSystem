@@ -1,0 +1,167 @@
+
+
+/*Card Css Start*/
+
+.cardPadding{
+
+  padding: 10px 10px 10px 10px;
+  float:left;
+  left: 35%;
+}
+
+.liHeader{
+  background-color: rgb(163, 220, 255);
+}
+
+.liHeader:hover{
+  background-color: rgb(93, 190, 250);
+}
+
+li{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+li:hover{
+  background-color: rgb(241, 241, 241);
+}
+
+/*Card Css Finish*/
+
+
+/*Payment Details Css Start*/
+@media print {
+  *,
+  *::before,
+  *::after {
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  a:not(.btn) {
+    text-decoration: underline; }
+  abbr[title]::after {
+    content: " (" attr(title) ")"; }
+  pre {
+    white-space: pre-wrap !important; }
+  pre,
+  blockquote {
+    border: 1px solid #adb5bd;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; }
+  @page {
+    size: a3; }
+  body {
+    min-width: 992px !important; }
+  .container {
+    min-width: 992px !important; }
+  .navbar {
+    display: none; }
+  .badge {
+    border: 1px solid #000; }
+  .table {
+    border-collapse: collapse !important; }
+    .table td,
+    .table th {
+      background-color: #fff !important; }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6 !important; }
+  .table-dark {
+    color: inherit; }
+    .table-dark th,
+    .table-dark td,
+    .table-dark thead th,
+    .table-dark tbody + tbody {
+      border-color: #dee2e6; }
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #dee2e6; } }
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  color: rgb(55, 169, 207);
+}
+
+  a:hover, a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+    color: rgb(27, 98, 122);
+
+  }
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #000; }
+
+.bg-primary {
+  background: #1089ff !important; }
+
+.ftco-section {
+  padding: 7em 0; }
+
+.ftco-no-pt {
+  padding-top: 0; }
+
+.ftco-no-pb {
+  padding-bottom: 0; }
+
+.heading-section {
+  font-size: 28px;
+  color: #000; }
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.table-wrap {
+  overflow-x: scroll; }
+
+.table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  min-width: 1000px !important;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29); }
+  .table thead th {
+    border: none;
+    padding: 30px;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .table thead tr {
+    background: #fff; }
+  .table tbody tr {
+    background: #fff; }
+  .table tbody th, .table tbody td {
+    border: none;
+    padding: 20px 30px;
+    font-size: 14px;
+    vertical-align: middle; }
+  .table tbody td .close span {
+    font-size: 12px;
+    color: #dc3545; }
+
+
+/*Payment Details Css Finish*/
+

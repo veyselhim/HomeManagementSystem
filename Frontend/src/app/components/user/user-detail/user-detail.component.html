@@ -1,0 +1,125 @@
+<div class="card mb-3 mt-5">
+  <div class="row g-0">
+    <div class="col-md-2">
+      <img
+        src="assets/images/card.jpg"
+        class="img-fluid rounded-start"
+        alt="..."
+      />
+    </div>
+
+    <div class="col md-12">
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item liHeader"><h3>Apartman Bilgileri</h3></li>
+          <li class="list-group-item">
+            <strong> Daire Tipi : </strong> {{ currentApartment?.type }}
+          </li>
+          <li class="list-group-item">
+            <strong>Kat :</strong> {{ currentApartment?.floor }}
+          </li>
+          <li class="list-group-item">
+            <strong>Blok :</strong> {{ currentApartment?.block }}
+          </li>
+          <li class="list-group-item">
+            <strong>Kapı No :</strong> {{ currentApartment?.doorNumber }}
+          </li>
+        </ul>
+
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col md-12">
+        
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Aidat Bilgileri</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Tutar</th>
+                        <th>Tarih</th>
+                        <th>Ödeme Durumu</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let dues of dueses">
+                        <th scope="row">{{dues.id}}</th>
+                        <td>{{dues.amount  |currency: "TRY":"₺":""}}</td>
+                        <td>{{dues.invoiceDate | date : 'longDate'}}</td>
+                        <td>{{dues.status | statusToYesNo}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  </div>
+
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col md-12">
+        
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Fatura Bilgileri</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-wrap">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Fatura Türü</th>
+                        <th>Tutar</th>
+                        <th>Tarih</th>
+                        <th>Ödeme Durumu</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let bill of bills">
+                        <th scope="row">{{bill.id}}</th>
+                        <td>{{bill.type}}</td>
+                        <td>{{bill.amount  |currency: "TRY":"₺":""}}</td>
+                        <td>{{bill.invoiceDate | date : 'longDate'}}</td>
+                        <td>{{bill.status | statusToYesNo}}</td>
+                      </tr>
+      
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+  </div>
+
+</div>

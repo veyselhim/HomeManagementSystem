@@ -1,0 +1,62 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <h3>Aidat Atama </h3>
+                            
+                                <form [formGroup]="duesAddForm">
+                                    <div class="row">
+                                       
+                                        <div class="col-md-12 "> 
+                                                <div class="form-group">
+                                                    <ng-select [items]="users" 
+                                                    bindLabel="firstName" 
+                                                    bindValue="id" 
+                                                    formControlName="userId"
+                                                    placeholder="Kişi seçiniz"
+                                                    >           
+                                                    </ng-select>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="date" id="invoiceDate" formControlName="invoiceDate" class="form-control" placeholder="Son ödeme tarihi"/> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="number" id="amount" formControlName="amount" class="form-control" placeholder="Tutar"/>
+                                            </div>
+                                        </div>   
+                                        <div class="col-md-12 pt-1">
+                                            <div class="form-group">
+                                                <input type="submit" value="Kaydet" class="btn btn-primary" (click)="add()">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="w-100 social-media mt-5">
+                                    <h3>Aidat işlemleri Yönlendirme</h3>
+                                    <p>
+                                        <a routerLink="/admin/apartments/update">Güncelle</a>
+                                        <a href="#">Sil</a>
+                                        <a href="#">Ödemeler</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="info-wrap w-100 p-5 img" style="background-image: url(assets/images/loginHome.jpg)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
