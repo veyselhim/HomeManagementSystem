@@ -19,7 +19,6 @@
 
 #### <span style="color:purple">**Step 4**</span>
 
-<a href="https://github.com/veyselhim/ApsisDemo-FrontEnd"><span style="color:red">**Click and go to frontend and follow the  steps in Getting Started**</span></a>
 
 > <span style="color:black">**Admin e-mail and password :**</span> veysel@gmail.com - 12345
 
